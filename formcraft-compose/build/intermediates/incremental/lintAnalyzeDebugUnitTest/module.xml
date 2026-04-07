@@ -1,0 +1,20 @@
+<lint-module
+    format="1"
+    dir="/Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose"
+    name=":formcraft-compose"
+    type="LIBRARY"
+    maven="io.formcraft:formcraft-compose:0.1.0"
+    agpVersion="9.1.0"
+    buildFolder="build"
+    bootClassPath="/Users/sundramsingh/Library/Android/sdk/platforms/android-36/android.jar:/Users/sundramsingh/Library/Android/sdk/build-tools/36.0.0/core-lambda-stubs.jar"
+    javaSourceLevel="11"
+    compileTarget="android-36"
+    neverShrinking="true"
+    highlightGradualR8Api="false">
+  <lintOptions
+      abortOnError="true"
+      absolutePaths="true"
+      checkReleaseBuilds="true"
+      explainIssues="true"/>
+  <variant name="debug"/>
+</lint-module>

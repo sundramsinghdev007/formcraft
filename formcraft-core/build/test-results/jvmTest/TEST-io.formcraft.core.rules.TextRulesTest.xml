@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TextRulesTest[jvm]" tests="12" skipped="0" failures="0" errors="0" timestamp="2026-04-07T01:54:43.846Z" hostname="Sundrams-MacBook-Pro.local" time="0.002">
+  <properties/>
+  <testcase name="Required passes for non-blank[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="PhoneNumber passes valid number[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="Email fails invalid address[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="Required fails for blank[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.001"/>
+  <testcase name="HasUppercase fails when no uppercase[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="Email passes valid address[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="PhoneNumber fails short number[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="MinLength fails when not met[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="HasUppercase passes when uppercase present[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.001"/>
+  <testcase name="StrongPassword passes strong password[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="MinLength passes when met[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <testcase name="StrongPassword fails weak password[jvm]" classname="io.formcraft.core.rules.TextRulesTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

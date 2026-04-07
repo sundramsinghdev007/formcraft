@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "io.formcraft.compose.formcraft-compose-release-35:/color/vector_tint_color.xml",
+        "source": "io.formcraft.compose.formcraft-compose-ui-10:/color/vector_tint_color.xml"
+    },
+    {
+        "merged": "io.formcraft.compose.formcraft-compose-release-35:/color/vector_tint_theme_color.xml",
+        "source": "io.formcraft.compose.formcraft-compose-ui-10:/color/vector_tint_theme_color.xml"
+    }
+]

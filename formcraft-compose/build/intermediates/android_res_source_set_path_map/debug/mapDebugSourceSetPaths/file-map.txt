@@ -1,0 +1,8 @@
+io.formcraft.compose.formcraft-compose-pngs-0 /Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/build/generated/res/pngs/debug
+io.formcraft.compose.formcraft-compose-updated_navigation_xml-1 /Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/build/generated/updated_navigation_xml/debug
+io.formcraft.compose.formcraft-compose-mergeDebugResources-2 /Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+io.formcraft.compose.formcraft-compose-mergeDebugResources-3 /Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+io.formcraft.compose.formcraft-compose-debug-4 /Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/build/intermediates/merged_res/debug/mergeDebugResources
+io.formcraft.compose.formcraft-compose-debug-5 /Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/build/intermediates/packaged_res/debug/packageDebugResources
+io.formcraft.compose.formcraft-compose-debug-6 /Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/src/debug/res
+io.formcraft.compose.formcraft-compose-main-7 /Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/src/main/res

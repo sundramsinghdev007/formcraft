@@ -1,0 +1,109 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "url": "../../formcraft-core/0.1.0/formcraft-core-0.1.0.module",
+    "group": "io.formcraft",
+    "module": "formcraft-core",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "jvmApiElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-api",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "formcraft-core-jvm-0.1.0.jar",
+          "url": "formcraft-core-jvm-0.1.0.jar",
+          "size": 51026,
+          "sha512": "475ed4969de728477035a96cd3f87252fb399453a9dbd5511779e1a4575879f7a7922b70074d1c629af4c4e7bddbb12728eb5f4513949465f92c3ce5aa44255d",
+          "sha256": "78d4ecebc5c86f93c02899521c6fd36c2d3dbc5c0b7ef544d0e77981ff6676b0",
+          "sha1": "070e7c18438c5f0c7022f01c9fc09e33eb0cd0a7",
+          "md5": "17dc858f58c1884d2e428a8eaf3a4165"
+        }
+      ]
+    },
+    {
+      "name": "jvmRuntimeElements-published",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "dependencies": [
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.9.0"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "formcraft-core-jvm-0.1.0.jar",
+          "url": "formcraft-core-jvm-0.1.0.jar",
+          "size": 51026,
+          "sha512": "475ed4969de728477035a96cd3f87252fb399453a9dbd5511779e1a4575879f7a7922b70074d1c629af4c4e7bddbb12728eb5f4513949465f92c3ce5aa44255d",
+          "sha256": "78d4ecebc5c86f93c02899521c6fd36c2d3dbc5c0b7ef544d0e77981ff6676b0",
+          "sha1": "070e7c18438c5f0c7022f01c9fc09e33eb0cd0a7",
+          "md5": "17dc858f58c1884d2e428a8eaf3a4165"
+        }
+      ]
+    },
+    {
+      "name": "jvmSourcesElements-published",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.jvm.environment": "standard-jvm",
+        "org.gradle.libraryelements": "jar",
+        "org.gradle.usage": "java-runtime",
+        "org.jetbrains.kotlin.platform.type": "jvm"
+      },
+      "files": [
+        {
+          "name": "formcraft-core-jvm-0.1.0-sources.jar",
+          "url": "formcraft-core-jvm-0.1.0-sources.jar",
+          "size": 12963,
+          "sha512": "9bf18683b62d1897321aae5fe30a4d3e77a9b2315548d56021261eb891ee72806156123f704aac107f9f6b394d99bf8057aa5415ab917b10645bcfd72f53790b",
+          "sha256": "ea71bbbbeb21309f0ba888cf79f844ead44cf94e1974bf3b9dd87383d8b3ee5b",
+          "sha1": "e3014941c99ae3add3b2dfd584c0fb98e315d69b",
+          "md5": "df181d5e7ad3fac5d9e5990444dc05f6"
+        }
+      ]
+    }
+  ]
+}

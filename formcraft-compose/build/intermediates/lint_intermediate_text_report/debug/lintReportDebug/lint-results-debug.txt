@@ -1,0 +1,23 @@
+/Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/src/main/kotlin/io/formcraft/compose/components/FormCheckbox.kt:31: Warning: Optional Modifier parameter should have a default value of Modifier [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier.fillMaxWidth(),
+    ~~~~~~~~
+/Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/src/main/kotlin/io/formcraft/compose/components/FormDropdown.kt:40: Warning: Optional Modifier parameter should have a default value of Modifier [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier.fillMaxWidth(),
+    ~~~~~~~~
+/Users/sundramsingh/AndroidStudioProjects/FormCraft/formcraft-compose/src/main/kotlin/io/formcraft/compose/components/FormTextField.kt:39: Warning: Optional Modifier parameter should have a default value of Modifier [ModifierParameter from androidx.compose.ui]
+    modifier: Modifier = Modifier.fillMaxWidth(),
+    ~~~~~~~~
+
+   Explanation for issues of type "ModifierParameter":
+   The first (or only) Modifier parameter in a Composable function should
+   follow the following rules:
+   - Be named modifier
+   - Have a type of Modifier
+   - Either have no default value, or have a default value of Modifier
+   - If optional, be the first optional parameter in the parameter list
+
+   Vendor: Jetpack Compose
+   Identifier: androidx.compose.ui
+   Feedback: https://issuetracker.google.com/issues/new?component=612128
+
+0 errors, 3 warnings

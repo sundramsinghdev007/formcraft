@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<incidents format="6" by="lint 9.1.0" type="incidents">
+
+    <incident
+        id="ModifierParameter"
+        severity="warning"
+        message="Optional Modifier parameter should have a default value of `Modifier`">
+        <fix-replace
+            description="Change default value to Modifier"
+            robot="true"
+            independent="true"
+            oldString="Modifier.fillMaxWidth()"
+            replacement="Modifier"
+            priority="0">
+            <range
+                file="${:formcraft-compose*debug*MAIN*sourceProvider*0*javaDir*2}/io/formcraft/compose/components/FormCheckbox.kt"
+                startOffset="933"
+                endOffset="977"/>
+        </fix-replace>
+        <location
+            file="${:formcraft-compose*debug*MAIN*sourceProvider*0*javaDir*2}/io/formcraft/compose/components/FormCheckbox.kt"
+            line="31"
+            column="5"
+            startOffset="933"
+            endLine="31"
+            endColumn="13"
+            endOffset="941"/>
+    </incident>
+
+    <incident
+        id="ModifierParameter"
+        severity="warning"
+        message="Optional Modifier parameter should have a default value of `Modifier`">
+        <fix-replace
+            description="Change default value to Modifier"
+            robot="true"
+            independent="true"
+            oldString="Modifier.fillMaxWidth()"
+            replacement="Modifier"
+            priority="0">
+            <range
+                file="${:formcraft-compose*debug*MAIN*sourceProvider*0*javaDir*2}/io/formcraft/compose/components/FormDropdown.kt"
+                startOffset="1385"
+                endOffset="1429"/>
+        </fix-replace>
+        <location
+            file="${:formcraft-compose*debug*MAIN*sourceProvider*0*javaDir*2}/io/formcraft/compose/components/FormDropdown.kt"
+            line="40"
+            column="5"
+            startOffset="1385"
+            endLine="40"
+            endColumn="13"
+            endOffset="1393"/>
+    </incident>
+
+    <incident
+        id="ModifierParameter"
+        severity="warning"
+        message="Optional Modifier parameter should have a default value of `Modifier`">
+        <fix-replace
+            description="Change default value to Modifier"
+            robot="true"
+            independent="true"
+            oldString="Modifier.fillMaxWidth()"
+            replacement="Modifier"
+            priority="0">
+            <range
+                file="${:formcraft-compose*debug*MAIN*sourceProvider*0*javaDir*2}/io/formcraft/compose/components/FormTextField.kt"
+                startOffset="1238"
+                endOffset="1282"/>
+        </fix-replace>
+        <location
+            file="${:formcraft-compose*debug*MAIN*sourceProvider*0*javaDir*2}/io/formcraft/compose/components/FormTextField.kt"
+            line="39"
+            column="5"
+            startOffset="1238"
+            endLine="39"
+            endColumn="13"
+            endOffset="1246"/>
+    </incident>
+
+</incidents>

@@ -1,0 +1,136 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "io.formcraft",
+    "module": "formcraft-compose",
+    "version": "0.1.0",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "9.3.1"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "io.formcraft",
+          "module": "formcraft-core",
+          "version": {
+            "requires": "0.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "formcraft-compose-0.1.0.aar",
+          "url": "formcraft-compose-0.1.0.aar",
+          "size": 29720,
+          "sha512": "c84b09421f3ab4e449fd8b990ef76eecdca2e38f21a6db51dbfa547a4083e8ddceab2353c18a88e4069dbe47f6a3454adec0f47d0fb6d320a3cc2d4ddc59771b",
+          "sha256": "a711c93b5d5bb7fcf58e3c3a14a7ca3436c4fa670eb5f6a2563f75d1c56e2c16",
+          "sha1": "5772791e8b9e6c0864ea53cf3a998fbf4caea49f",
+          "md5": "c2e6fd4ffedff356003417fd4a92a6e9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.compose",
+          "module": "compose-bom",
+          "version": {
+            "requires": "2026.02.01"
+          },
+          "attributes": {
+            "org.gradle.category": "platform"
+          }
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui"
+        },
+        {
+          "group": "androidx.compose.ui",
+          "module": "ui-tooling-preview"
+        },
+        {
+          "group": "androidx.compose.material3",
+          "module": "material3"
+        },
+        {
+          "group": "androidx.compose.foundation",
+          "module": "foundation"
+        },
+        {
+          "group": "io.formcraft",
+          "module": "formcraft-core",
+          "version": {
+            "requires": "0.1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "2.2.10"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "formcraft-compose-0.1.0.aar",
+          "url": "formcraft-compose-0.1.0.aar",
+          "size": 29720,
+          "sha512": "c84b09421f3ab4e449fd8b990ef76eecdca2e38f21a6db51dbfa547a4083e8ddceab2353c18a88e4069dbe47f6a3454adec0f47d0fb6d320a3cc2d4ddc59771b",
+          "sha256": "a711c93b5d5bb7fcf58e3c3a14a7ca3436c4fa670eb5f6a2563f75d1c56e2c16",
+          "sha1": "5772791e8b9e6c0864ea53cf3a998fbf4caea49f",
+          "md5": "c2e6fd4ffedff356003417fd4a92a6e9"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseSourcePublication",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "files": [
+        {
+          "name": "formcraft-compose-0.1.0-sources.jar",
+          "url": "formcraft-compose-0.1.0-sources.jar",
+          "size": 4568,
+          "sha512": "d65194a63930e302497d03976c808734cf9231e263b073cef1e1b8d5aea3d07d711c69cee463633f74a392c448955218ce5008cdadcfbf688f8ec4dec1da49af",
+          "sha256": "1a6b5e843b68dfb2a432400fb31f34fa9c326ac2f9aca1008b0c6790e38c48b8",
+          "sha1": "b319589310ac72b88b565781f3d558352725da24",
+          "md5": "521611c751e331b50e9be95f60a2859a"
+        }
+      ]
+    }
+  ]
+}
