@@ -94,13 +94,15 @@ afterEvaluate {
         }
     }
 
-    signing {
-        val key  = providers.gradleProperty("signingInMemoryKey").orNull
-            ?: System.getenv("ORG_GRADLE_PROJECT_signingInMemoryKey")
-        val pass = providers.gradleProperty("signingInMemoryKeyPassword").orNull
-            ?: System.getenv("ORG_GRADLE_PROJECT_signingInMemoryKeyPassword")
-        if (key != null && pass != null) {
-            useInMemoryPgpKeys(key, pass)
+    val signingKey = providers.gradleProperty("signingInMemoryKey").orNull
+        ?: System.getenv("ORG_GRADLE_PROJECT_signingInMemoryKey")
+    val signingPass = providers.gradleProperty("signingInMemoryKeyPassword").orNull
+        ?: System.getenv("ORG_GRADLE_PROJECT_signingInMemoryKeyPassword")
+    val skipSigning = providers.gradleProperty("skipSigning").isPresent
+
+    if (!signingKey.isNullOrBlank() && !signingPass.isNullOrBlank() && !skipSigning) {
+        signing {
+            useInMemoryPgpKeys(signingKey, signingPass)
             sign(publishing.publications)
         }
     }

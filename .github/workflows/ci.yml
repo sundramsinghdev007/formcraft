@@ -123,8 +123,8 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Publish to Maven Local
-        run: ./gradlew publishToMavenLocal
+      - name: Publish to Maven Local (no signing)
+        run: ./gradlew publishToMavenLocal -PskipSigning=true
 
   # ── publish to Maven Central (on main only) ──────────────────────────────────
   publish:
@@ -147,6 +147,25 @@ jobs:
 
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
+
+      - name: Verify secrets are configured
+        run: |
+          missing=()
+          [ -z "$MAVEN_USER" ]   && missing+=("MAVEN_CENTRAL_USERNAME")
+          [ -z "$MAVEN_PASS" ]   && missing+=("MAVEN_CENTRAL_PASSWORD")
+          [ -z "$SIGNING_KEY" ]  && missing+=("SIGNING_IN_MEMORY_KEY")
+          [ -z "$SIGNING_PASS" ] && missing+=("SIGNING_IN_MEMORY_KEY_PASSWORD")
+          if [ ${#missing[@]} -ne 0 ]; then
+            echo "❌ Missing secrets: ${missing[*]}"
+            echo "Add them in: GitHub repo → Settings → Secrets → Actions"
+            exit 1
+          fi
+          echo "✅ All secrets present"
+        env:
+          MAVEN_USER:   ${{ secrets.MAVEN_CENTRAL_USERNAME }}
+          MAVEN_PASS:   ${{ secrets.MAVEN_CENTRAL_PASSWORD }}
+          SIGNING_KEY:  ${{ secrets.SIGNING_IN_MEMORY_KEY }}
+          SIGNING_PASS: ${{ secrets.SIGNING_IN_MEMORY_KEY_PASSWORD }}
 
       - name: Publish to Maven Central
         run: ./gradlew publishAllPublicationsToMavenCentralRepository
